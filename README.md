@@ -3,3 +3,4 @@ JavaScript examples to demonstrate the process of handling script and user event
 
 These scripts are written to demonstrate the use of JavaScript event handling methods. 
 Compiled and presented by Vakindu Philliam.
+
