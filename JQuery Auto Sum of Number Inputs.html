@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Auto Add Numbers</title>
+
+<link href="jquery-ui.css" rel="stylesheet">
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.js"></script>
+
+	</head>
+	<body>
+<table width="300px" border="1" style="border-collapse:collapse;background-color:#E8DCFF">
+	<tr><td>
+
+<input type="text" class="calc" value="">
+<input type="text" class="calc" value="">
+<input type="text" class="calc" value="">
+<input type="text" class="calc" value="">
+<input type="text" class="calc" value="">
+
+<span id="total"></span>
+
+	</tr></td>
+</table>
+
+
+<script>
+
+$(document).ready(function(){
+    $('.calc').change(function(){
+        var total = 0;
+        $('.calc').each(function(){
+            if($(this).val() != '')
+            {
+                total += parseInt($(this).val());
+            }
+        });
+        $('#total').html(total);
+    });
+})(jQuery);
+
+</script>
+</body>
+</html>

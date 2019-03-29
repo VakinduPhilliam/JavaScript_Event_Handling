@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language="javascript">
+function AddInputs()
+{
+    var total = 0;
+    var coll = document.getElementsByTagName("input")
+    for ( var i = 0; i<coll.length; i++)
+    {
+        var ele = coll[i];
+        total += parseInt(ele.value);
+    }
+    var Display = document.getElementById("Display");
+    Display.innerHTML = total;
+}
+</script>
+</head>
+<body>
+<input onkeyup="AddInputs()" />
+<input onkeyup="AddInputs()" />
+<input onkeyup="AddInputs()" />
+<span id="Display"></span>
+</body>
+</html>
